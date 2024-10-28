@@ -1,42 +1,113 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen container */
+.full-screen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Background color */
+}
+
+/* Selfie Section */
+.selfie {
+  width: 100%;
+  height: 100%;
+  background: url('your-image-url.jpg') no-repeat center center/cover; /* Replace with your image URL */
+  position: absolute;
+}
+
+/* Texture Overlay */
+.texture-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent overlay */
+}
+
+/* Title and Subtitle Wrapper */
+.main-title-wrap {
+  position: relative;
+  z-index: 1; /* Ensure this appears above other layers */
   text-align: center;
+  color: #333; /* Text color */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Corners Wrapper */
+.corners-wrap {
+  position: relative;
+  overflow: hidden;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Shadow Corners */
+.corners-wrap.shadow .corner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Shadow color */
+  transition: all 0.3s ease; /* Transition for hover effects */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.corner.top-left {
+  top: 0;
+  left: 0;
 }
 
-.card {
-  padding: 2em;
+.corner.top-right {
+  top: 0;
+  right: 0;
 }
 
-.read-the-docs {
-  color: #888;
+.corner.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.corner.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+/* Titles */
+.main-title {
+  font-size: 2.5rem; /* Adjust size as needed */
+  margin: 0.5rem 0;
+  font-weight: bold; /* Bold text */
+}
+
+.small {
+  font-size: 2rem; /* Smaller title size */
+}
+
+/* Subtitles */
+.subtitle {
+  font-size: 1.2rem; /* Subtitle size */
+  margin: 0.5rem 0;
+  color: #666; /* Subtitle color */
+}
+
+/* Link Styling */
+.external-link {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.external-link:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+/* Bold Text */
+.bold-text {
+  font-weight: bold; /* Bold text */
 }
