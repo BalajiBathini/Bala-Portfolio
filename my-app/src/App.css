@@ -1,113 +1,66 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* styles.css or your main CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+.hero-header {
+  background-color: #F8F9FA;
 }
 
-/* Full-screen container */
-.full-screen {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0; /* Background color */
+.hero-header a.action {
+  font-size: 17px;
+  line-height: 25px;
+  color: #fff;
+  font-weight: 600;
 }
 
-/* Selfie Section */
-.selfie {
-  width: 100%;
-  height: 100%;
-  background: url('your-image-url.jpg') no-repeat center center/cover; /* Replace with your image URL */
-  position: absolute;
+.hero-header a.action:hover {
+  text-decoration: underline;
 }
 
-/* Texture Overlay */
-.texture-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent overlay */
+ .navbar-brand {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 24px;
+  font-family: 'Pacifico', cursive ;
 }
 
-/* Title and Subtitle Wrapper */
-.main-title-wrap {
-  position: relative;
-  z-index: 1; /* Ensure this appears above other layers */
-  text-align: center;
-  color: #333; /* Text color */
+.hero-header li.nav-item {
+  margin: 0 6px;
 }
 
-/* Corners Wrapper */
-.corners-wrap {
-  position: relative;
-  overflow: hidden;
+.hero-header .navbar-light .navbar-nav .nav-link {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-/* Shadow Corners */
-.corners-wrap.shadow .corner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* Shadow color */
-  transition: all 0.3s ease; /* Transition for hover effects */
+.hero-header .navbar-light .navbar-nav .nav-link:hover,
+.hero-header .navbar-light .navbar-nav .nav-link:focus {
+  color: var(--primary-color);
+}
+.navbar-collapse{
+  justify-content: end;
 }
 
-.corner.top-left {
-  top: 0;
-  left: 0;
+@media (max-width: 992px) {
+  .hero-header .navbar-collapse {
+    background:#F8F9FA;
+    padding: 10px;
+    border: 1px solid #eee;
+    
+    overflow-y: auto;
+    position: absolute;
+    top: 55px;
+    left: -100%; /* Start off-screen */
+    height: 100vh; /* Full height */
+    width: 250px; /* Desired width */
+    transition: left 0.5s ease; /* Smooth transition for the slide-in effect */
+  }
+  
+  .navbar-collapse.show {
+    left: 0; /* Slide in when opened */
+  }
 }
 
-.corner.top-right {
-  top: 0;
-  right: 0;
-}
 
-.corner.bottom-left {
-  bottom: 0;
-  left: 0;
-}
-
-.corner.bottom-right {
-  bottom: 0;
-  right: 0;
-}
-
-/* Titles */
-.main-title {
-  font-size: 2.5rem; /* Adjust size as needed */
-  margin: 0.5rem 0;
-  font-weight: bold; /* Bold text */
-}
-
-.small {
-  font-size: 2rem; /* Smaller title size */
-}
-
-/* Subtitles */
-.subtitle {
-  font-size: 1.2rem; /* Subtitle size */
-  margin: 0.5rem 0;
-  color: #666; /* Subtitle color */
-}
-
-/* Link Styling */
-.external-link {
-  color: #007bff; /* Link color */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease; /* Smooth color transition */
-}
-
-.external-link:hover {
-  color: #0056b3; /* Darker shade on hover */
-}
-
-/* Bold Text */
-.bold-text {
-  font-weight: bold; /* Bold text */
-}
