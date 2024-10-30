@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 
+
+
 .hero-header {
   background-color: #F8F9FA;
 }
@@ -18,7 +20,7 @@
 }
 
  .navbar-brand {
-  color: var(--primary-color);
+  color: #EA3A60;
   font-weight: 600;
   font-size: 24px;
   font-family: 'Pacifico', cursive ;
@@ -64,3 +66,203 @@
 }
 
 
+.hero-footer #footers14-block {
+  background-color: var(--secondary-color);
+}
+
+.copyright p {
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--text-color);
+  padding: 10px 0;
+}
+
+.social a {
+  font-size: 16px;
+  color: var(--text-color);
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.hero-footer .social a:hover {
+  color: var(--primary-color);
+}
+
+.hero-footer #movetop {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  background: #333;
+  border-radius: 50%;
+  transition: 0.5s ease-out;
+}
+
+.hero-footer #movetop:hover {
+  background: #312;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 736px) {
+  .hero-footer .copyright {
+    order: 2;
+  }
+}
+/* CSS for Home.jsx */
+
+.main-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-banner h2 {
+  font-weight: 700;
+  font-size: 65px;
+  padding-left: 10px;
+  line-height: 80px;
+  color: #000; 
+}
+
+small {
+  font-size: 80%;
+  font-weight: 400; 
+}
+
+.main-banner .typewrite {
+  font-size: 24px;
+  font-weight: 600;
+  color: #EA3A60;
+  border-bottom: 3px solid var(--primary-color);
+  padding-left: 10px;
+  line-height: 40px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto; /* Ensures responsive image */
+  min-height: 500px;
+  object-fit: cover; /* Covers the area without distortion */
+}
+
+.button-group {
+  margin-top: 20px; /* Space between the buttons and the text */
+}
+
+.main-banner .theme-button {
+  transition: 0.3s ease-out;
+  display: inline-block;
+  line-height: 52px;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 10px;
+  padding: 0 30px; /* Consistent padding */
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #ea3a60;
+  border-color: #ea3a60;
+}
+
+.btn-outline-primary {
+  color: #ea3a60;
+  border-color: #ea3a60;
+}
+
+.banner-info {
+  width: 100%;
+  padding: 100px 50px; /* Simplified padding */
+  margin: 0 auto; /* Centering */
+}
+
+
+@media (max-width: 1200px){
+ 
+ 
+  
+  
+  
+  
+  
+  .banner-info {
+    
+    padding: 100px 20px; /* Simplified padding */
+    
+  }
+}
+
+@media (max-width: 992px){
+  .main-banner h2 {
+    font-weight: 700;
+    font-size: 46px;
+    padding-left: 10px;
+    line-height: 60px;
+}
+  
+.banner-image {
+  width: 100%;
+ 
+  min-height: 500px;
+}
+ 
+  
+
+  
+ 
+}
+@media (max-width: 768px){
+
+    
+.banner-info {
+    
+  padding: 50px 50px; /* Simplified padding */
+  
+}
+
+  
+ 
+}
+@media (max-width: 425px){
+
+  .main-banner h2 {
+    font-weight: 700;
+    font-size: 40px;
+    padding-left: 10px;
+    line-height: 50px;
+}
+
+
+.main-banner .typewrite {
+  font-size: 20px;
+  font-weight: 600;
+  
+
+  line-height: 40px;
+}
+  .main-banner .theme-button {
+   
+    line-height: 45px;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 10px;
+    padding: 0 20px; /* Consistent padding */
+    
+  }
+      
+.banner-info {
+    
+  padding: 50px 20px; /* Simplified padding */
+  
+}
+    
+   
+  }
+ 
