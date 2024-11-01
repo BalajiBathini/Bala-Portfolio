@@ -201,7 +201,9 @@ small {
   margin: 0 auto; /* Centering */
 }
 
-
+.about{
+  margin-top: 50px;
+  }
 
 
 @media (max-width: 1200px){
@@ -293,7 +295,7 @@ small {
     line-height: 28px;
     text-align: justify;
     color: var(--text-color);
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .about h4 {
@@ -305,30 +307,21 @@ small {
 .about-pic {
     max-width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
-.about .title {
-    font-size: 45px;
-    color: var(--title-color);
-    margin-bottom: 40px;
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 600;
-    border-bottom: 2px solid #EA3A60;
-    display: inline-block;
-    line-height: 1;
-}
+
 
 @media (max-width: 1400px) {
     .about p {
         font-size: 15px;
         line-height: 28px;
-        margin: 20px 0;
+        
     }
     
     .about h4 {
         font-size: 40px;
-        line-height: 45px;
+       
     }
 
    
@@ -343,7 +336,7 @@ small {
   
   .about h4 {
       font-size: 30px;
-      line-height: 25px;
+      line-height: 40px;
   }
  
 
@@ -361,30 +354,196 @@ small {
   .about h4{
     padding-top: 20px;
   }
-.about .title{
-  margin-bottom: 20px;
-}
+
 .about{
   padding-left: 10px;
   padding-right: 10px;
 }
 }
 
-.skills-chart-container {
-  width: 80%;
-  height: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #2e2e2e; /* Dark background for chart */
+
+/* Container and Section Styling */
+.work-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.work-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Row and Card Styling */
+.work-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
-  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Project Content */
+.project-content {
   text-align: center;
 }
 
-/* Title Styling */
-.skills-chart-container h2 {
-  color: #f7931e;
-  font-size: 24px;
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ea3a60;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #555;
   margin-bottom: 15px;
+}
+
+/* Tech Stack */
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-stack span {
+  font-size: 0.85rem;
+  background-color: #ea3a60;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+/* Section Container Styling */
+/* Section Container Styling */
+.fun-facts-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Row Styling */
+.fun-facts-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Fact Item Styling */
+.fact-item {
+  margin: 0 10px;
+}
+
+.fact-content {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.fact-content:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon Styling */
+.icon {
+  font-size: 2rem;
+  color: #ea3a60;
+  margin-bottom: 10px;
+}
+
+/* Number and Description Styling */
+.fact-number {
+  font-size: 1.8rem;
+  color: #ea3a60;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.fact-description {
+  font-size: 1rem;
+  color: #555;
+}
+/* Contact Section Styling */
+.contact-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.global-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Form Styling */
+.contact-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-control {
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.contact-form .form-control:focus {
+  border-color: #ea3a60;
+  box-shadow: 0 0 5px rgba(234, 58, 96, 0.5);
+}
+
+.theme-button {
+  background-color: #ea3a60;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+.theme-button:hover {
+  background-color: #d32f4b;
+}
+
+/* Address Styling */
+.contact-address {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-address b {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-address p {
+  margin: 0;
+  color: #555;
 }

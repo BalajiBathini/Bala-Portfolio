@@ -1,0 +1,113 @@
+ <div className="col-lg-12 py-5">
+                            <SkillsChart />
+                        </div>
+                        <div>
+                            <div id="infografik">
+                                <h1>{`What's in my head`}</h1>
+
+                                <div className="leftside">
+                                    <div className="gehirndesign">
+                                        <table cellPadding="0" cellSpacing="0">
+                                            <colgroup>
+                                                <col width="100" />
+                                                <col />
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th className="desi">Design</th>
+                                                    <th className="desi">50%</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr><td className="ps">Photoshop</td><td className="ps">30%</td></tr>
+                                                <tr><td className="ai">Illustrator</td><td className="ai">25%</td></tr>
+                                                <tr><td className="ind">InDesign</td><td className="ind">20%</td></tr>
+                                                <tr><td className="fla">Flash</td><td className="fla">10%</td></tr>
+                                                <tr><td className="fw">Fireworks</td><td className="fw">5%</td></tr>
+                                                <tr><td className="pp">Premiere Pro</td><td className="pp">5%</td></tr>
+                                                <tr><td className="ae">After Effects</td><td className="ae">5%</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div className="gehirncoding">
+                                        <table cellPadding="0" cellSpacing="0">
+                                            <colgroup>
+                                                <col width="100" />
+                                                <col />
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th className="cod">Coding</th>
+                                                    <th className="cod">25%</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr><td className="ht">(X)HTML</td><td className="ht">30%</td></tr>
+                                                <tr><td className="cs">CSS</td><td className="cs">30%</td></tr>
+                                                <tr><td className="jas">JavaScript</td><td className="jas">20%</td></tr>
+                                                <tr><td className="php">PHP</td><td className="php">15%</td></tr>
+                                                <tr><td className="actsc">ActionScript</td><td className="actsc">5%</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div className="gehirnspiele">
+                                        <table cellPadding="0" cellSpacing="0">
+                                            <colgroup>
+                                                <col width="100" />
+                                                <col />
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th className="spi">Games</th>
+                                                    <th className="spi">25%</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr><td className="snes">SNES</td><td className="snes">25%</td></tr>
+                                                <tr><td className="wii">Wii</td><td className="wii">25%</td></tr>
+                                                <tr><td className="nds">Nintendo DS</td><td className="nds">20%</td></tr>
+                                                <tr><td className="playst">PS2</td><td className="playst">20%</td></tr>
+                                                <tr><td className="sonst">Other</td><td className="sonst">10%</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div className="rightside">
+                                    <div id="maphover" className=""></div>
+                                    <img src="./src/assets/images/map.gif" className="map" alt="What's in my head" useMap="#gehirn" width="502" height="401" />
+                                </div>
+
+                                <div className="clear"></div>
+                                <p className="copytext">* The above shown graphic does not claim correctness in any kind of way.</p>
+
+                                <map name="gehirn">
+                                    {/* Design */}
+                                    <area shape="poly" coords="86,56,109,35,126,34,143,22,166,18,179,10,203,7,214,3,232,5,246,0,266,6,285,0,365,20,382,25,400,41,414,54,416,63,403,59,392,58,379,50,355,72,317,65,303,45,274,51,258,80,245,96,240,121,244,141,249,162,225,212,226,180,198,174,179,184,150,203,144,190,146,167,154,137,156,98,167,89,156,70,140,66,124,54,119,55,109,46" title="Photoshop" alt="ps" />
+                                    <area shape="poly" coords="111,262,120,250,123,235,152,205,202,174,227,180,225,205,248,163,276,139,289,151,300,141,324,152,355,151,336,172,323,198,301,195,279,200,273,219,289,239,291,245,300,248,322,268,302,278,276,275,234,292,218,303,191,319,155,303,134,301,119,287" title="Illustrator" alt="ai" />
+                                    <area shape="poly" coords="250,161,246,151,246,140,242,105,249,84,259,79,275,51,305,46,318,64,354,71,375,54,392,55,398,65,397,79,403,86,404,60,432,77,460,104,459,121,469,124,491,171,490,184,500,193,497,225,487,202,474,187,462,184,465,163,442,123,420,118,409,104,370,129,354,157,350,149,322,153,299,142,290,152,274,142" title="InDesign" alt="ind" />
+                                    <area shape="poly" coords="404,248,413,231,394,221,408,159,420,153,432,141,443,160,464,169,463,183,480,188,497,223,469,260,434,245,424,249" title="Flash" alt="fla" />
+                                    <area shape="poly" coords="322,268,303,251,293,246,291,238,274,224,282,203,304,210,324,230,395,221,415,234,403,246,391,243,377,249,366,259,351,261" title="Fireworks" alt="fw" />
+                                    <area shape="poly" coords="284,200,303,195,327,195,332,179,351,159,355,174,374,183,406,174,396,224,370,223,320,229" title="Premiere Pro" alt="pp" />
+                                    <area shape="poly" coords="349,162,372,128,411,102,420,119,448,123,465,164,464,172,456,165,443,162,441,148,430,140,406,160,395,179,376,184,354,176" title="After Effects" alt="ae" />
+
+                                    {/* Coding */}
+                                    <area shape="poly" coords="121,52,140,63,158,72,168,90,157,97,153,142,141,180,151,204,121,239,112,228,130,209,126,200,93,185,96,167,82,165,72,144,53,132,41,130,45,114,60,104,74,104,68,90,77,76,98,68" title="(X)HTML" alt="ht" />
+                                    <area shape="poly" coords="122,238,115,230,109,230,131,208,127,198,110,192,95,182,93,166,82,165,74,142,55,128,40,131,38,140,52,152,35,151,28,168,44,190,43,201,63,229,83,230,94,226,100,245,120,250" title="CSS" alt="cs" />
+                                    <area shape="poly" coords="99,244,94,225,82,231,64,228,42,201,42,190,25,173,30,166,18,155,10,151,1,142,3,165,13,177,11,189,22,201,14,209,19,221,23,233,50,253,68,256,83,255,95,252" title="JavaScript" alt="jas" />
+                                    <area shape="poly" coords="53,256,25,235,20,222,12,209,1,215,1,249,20,254,28,273,60,274" title="PHP" alt="php" />
+                                    <area shape="poly" coords="87,18,67,41,69,53,60,53,60,42,47,33,54,18,63,6,68,4,90,3" title="ActionScript" alt="actsc" />
+
+                                    {/* Games */}
+                                    <area shape="poly" coords="109,28,124,28,140,18,157,16,167,21,146,34" title="SNES" alt="snes" />
+                                    <area shape="poly" coords="246,4,265,3,282,1,300,6,319,2,300,17,271,11" title="Wii" alt="wii" />
+                                    <area shape="poly" coords="305,13,301,24,276,38,253,28,239,26,213,29,187,26,165,30,139,41,117,36,113,49,92,49,95,68,78,75,64,51,70,37,92,30,109,26,127,18,143,12,164,4,180,6,205,7,217,0,239,2,264,3,278,0,298,10" title="Nintendo DS" alt="nds" />
+                                    <area shape="poly" coords="81,85,68,90,74,103,57,101,47,118,42,128,58,132,65,153,55,148,35,151,31,167,43,188,64,228,80,230,91,229,97,246,121,252,108,264,111,283,95,275,60,272,24,271,0,269,0,209,17,185,10,166,18,150,2,140,2,126,11,106,19,105,11,93,20,82,50,71,76,68,90,74,99,76" title="PS2" alt="playst" />
+                                    <area shape="poly" coords="49,31,41,40,32,58,36,70,39,61,59,65,60,50,50,38" title="Other" alt="sonst" />
+                                </map>
+                            </div>
+
+
+                        </div>
