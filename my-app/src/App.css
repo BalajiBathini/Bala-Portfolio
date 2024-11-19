@@ -446,6 +446,7 @@ small {
 /* Row Styling */
 .fun-facts-row {
   display: flex;
+  flex-wrap: inherit;
   justify-content: center;
 }
 
@@ -518,16 +519,8 @@ small {
   box-shadow: 0 0 5px rgba(234, 58, 96, 0.5);
 }
 
-.theme-button {
-  background-color: #ea3a60;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-}
 
-.theme-button:hover {
-  background-color: #d32f4b;
-}
+
 
 /* Address Styling */
 .contact-address {
